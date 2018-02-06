@@ -1,0 +1,9 @@
+/*noinspection CssUnusedSymbol*/
+.progress-bar {
+    transition: width 0s;
+    -webkit-transition: width 0s;
+}
+
+.progress {
+    height: 25px;
+}

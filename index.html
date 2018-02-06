@@ -1,0 +1,102 @@
+<html lang="en pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>The History of Conquest</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="The History of Conquest">
+    <meta name="application-name" content="The History of Conquest">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ff0000">
+    <meta name="description" content="Game in Development">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="progressbar.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="padding-top: 17px; font-size: 20px">The History of Conquest</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar"><ul class="nav navbar-nav" id="resources">
+        </ul></div>
+    </div>
+</nav>
+<div class="container" id="mainContainer" style="margin-top: 85px">
+    <div id="gameStart"> </div>
+    <ul class="nav nav-pills nav-justified" id="navsHere">
+    </ul> <br>
+    <div class="tab-content">
+        <div id="units" class="tab-pane in active well">
+        </div>
+        <div id="armyUnits" class="tab-pane fade well">
+        </div>
+        <div id="upgrades" class="tab-pane fade well">
+            <div id="upgrades-notBought">
+            </div> <br> <b> Bought: <br> </b> <br> <div id="upgrades-bought">
+        </div>
+        </div>
+        <div id="conquests" class="tab-pane fade well">
+            <div id="conquests-notBought">
+            </div> <br> <b> Bought: <br> </b> <br> <div id="conquests-bought">
+        </div>
+        </div>
+        <div id="about" class="tab-pane fade well">
+            <h3> Made by Gabriel Pessoa</h3>
+            <h3 style="padding-top:1em"> GitHub: <small> https://github.com/gabrielpessoa1/gabrielpessoa1.github.io </small></h3>
+            <h4 style="padding-top: 2em"> Icons by </h4>
+            <div style="padding-left:2em">
+                <p> Butcher and Fishmonger by Douglas Santos from the Noun Project </p>
+                <p> Metal bar icon by Lorc under CC BY 3.0</p>
+                <p> Cash icon by Lorc under CC BY 3.0</p>
+                <p> Fizzing flask icon by Lorc under CC BY 3.0</p>
+                <p> Crossed swords icon by Lorc under CC BY 3.0</p>
+                <p> Prehistoric Human Attack by Gan Khoon Lay from the Noun Project </p>
+                <p> Farmer by BirVa Mehta from the Noun Project </p>
+                <p> astronomer by James Keuning from the Noun Project </p>
+                <p> Spartan by BirVa Mehta from the Noun Project </p>
+                <p> Spartan by Joshua McMahan from the Noun Project</p>
+                <p> Money by Luis Prado from the Noun Project </p>
+                <p> Archer by Andrew Doane from the Noun Project </p>
+                <p> Sword in Stone by Oliviu Stoian from the Noun Project </p>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-danger" onClick="hardReset()"> Hard Reset</button>
+</div>
+</body>
+
+<footer>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="RoundNumber.js"></script>
+    <script type="text/javascript" src="UIElement.js"></script>
+    <script type="text/javascript" src="Resource.js"></script>
+    <script type="text/javascript" src="ArmyPoint.js"></script>
+    <script type="text/javascript" src="Unit.js"></script>
+    <script type="text/javascript" src="ArmyUnit.js"></script>
+    <script type="text/javascript" src="InitialUpgrade.js"></script>
+    <script type="text/javascript" src="ConquestUpgrade.js"></script>
+    <script type="text/javascript" src="ManagerUpgrade.js"></script>
+    <script type="text/javascript" src="ProductionUpgrade.js"></script>
+    <script type="text/javascript" src="SpeedUpgrade.js"></script>
+    <script type="text/javascript" src="UnitUpgrade.js"></script>
+    <script type="text/javascript" src="ArmyUpgrade.js"></script>
+    <script type="text/javascript" src="UnlockUpgrade.js"></script>
+    <script type="text/javascript" src="LoadGame.js"></script>
+    <script type="text/javascript" src="Player.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
+    <script type="text/javascript" src="HardReset.js"></script>
+</footer>
+</html>
